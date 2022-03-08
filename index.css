@@ -31,7 +31,7 @@ body {
   /* } */
 
 .jumbotron {
-  background-image: url("/Images/joe-maldonado-dice-lower.png");
+  background-image: url("Images/joe-maldonado-dice-lower.png");
   background-size: cover;
   background-repeat: no-repeat;
   height: 50px;
