@@ -1,19 +1,17 @@
 body {
     font-family: "Roboto", helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
+    margin: 15px;
+    padding: 5px;
     background-color: #F5F5F5;
   }
   h1 {
-    margin: 35px;
-    margin-top: 50px;
+    margin: 0px;
+    margin-top: 10px;
     color: black;
   }
-  .covidRow{
-    column: 1;
-  }
+ 
   h2 {
-    margin: 35px;
+    margin: 0px;
     margin-top: 15px;
     }
   
@@ -22,3 +20,126 @@ body {
     margin: 35px;
     margin-top: 15px;
   }
+
+  .navBar {
+    margin-left: auto;
+    font-size: 25px;
+    }
+
+/* .jumbotron { */
+  /* background-image: url(/Images/joe-maldonado-dice.jpg); */
+  /* } */
+
+.jumbotron {
+  background-image: url("/Images/joe-maldonado-dice-lower.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50px;
+  height: calc(100vh - 25px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}  
+
+.jumboCopy {
+  width: 70%;
+  min-width: 500px;
+  max-width: 700px;
+  text-align: center;
+}
+
+.boxCovid {
+  background-color: lightgrey;
+  width: auto;
+  border: 5px solid red;
+  padding: 25px;
+  margin: 20px;
+}
+
+.aboutUs {
+  background-color: transparent;
+  padding: 50px;
+}
+
+.boxHours {
+  background-color: lightgrey;
+  height: auto;
+  padding-top: 25px;
+  padding-left: 50px;
+  padding-bottom: 35px;
+  width: 33.3%;
+  }
+
+.servicesOffered {
+  background-color: lightgrey;
+  height: auto;
+  padding-top: 25px;
+  padding-left: 50px;
+  padding-bottom: 35px;
+  width: 33.3%;
+}
+
+.socials {  
+  background-color: lightgrey;
+  height: auto;
+  padding-top: 25px;
+  padding-left: 50px;
+  padding-bottom: 35px;
+  column-gap: 5px;
+  row-gap: 100px;
+  width: 33.3%;
+}
+
+
+/* do not touch this one */
+.serviceHours{
+display: flex;
+justify-content: center;
+column-gap: 5px;
+}
+/* do not touch the one above, at least not yet */
+
+.socialLogo{
+display: flex;
+justify-content: center;
+}
+
+.shopImages{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+ 
+ 
+ /* 
+  display: grid;
+  gap: 10px;
+  padding: auto;
+   */
+}
+
+.footer {
+  background-color: gray;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.footer1 {
+  display: flex;
+  justify-content: center;
+  column-gap: 5px;
+}
+
+.footer2 {
+  display: flex;
+  content: center;
+  column-gap: 5px;
+
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}

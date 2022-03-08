@@ -9,62 +9,73 @@
 <body>
 
 
-<div class="largeFont">
-
-</h1>GGTGaming</h1>
-
+<!--Navbar Start, how do i remove the white banner that is part of the nav bar. I don not like it being there.1-->
+<h1 class="largeFont"> GGTGaming</h1>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <div class="navBar">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
         <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-        <a class="nav-item nav-link" href="#">Features</a>
-        <a class="nav-item nav-link" href="#">Pricing</a>
-        <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        <a class="nav-item nav-link" href="#">Games</a>
+        <a class="nav-item nav-link" href="#">Socials</a>
+        <a class="nav-item nav-link" href="#">Shop</a>
+    </div>   
       </div>
     </div>
   </nav>
+<!--End of Nav Bar-->
 
+<!--Start of Jumbotron, this section needs to be altererd so that the image is not as zoomed in as it is, how do I change the zoomed in picture that I have placed in there. Also, how can I lower
+the oppacity of the image and change the color of the font inside of the "title" part of it??-->
 <div class="jumbotron">
-    <h1 class="display-4">New Tables Available</h1>
-    <p class="lead">3 new tables available, let us know if you want to join!</p>
-    <hr class="my-4">
-    <p>
-       <li>John Markl, Daniel Kay, Sean Moreira</li> 
-    <a class="btn btn-primary btn-lg" href="#" role="button">Click to email us</a>
-  </div>
-<div class="fontainer-fluid">
-    <div class="row">
-        <div class="cardContainer col-lg-3 col-md-3 col-sm-12">This is dummy text that I am adding</div>
-            <div class="cardContainer col-lg-3 col-md-3 col-sm-12"> This is the second dummy that I added to describe the other one.</div>
-                <div class="cardContainer col-lg-3 col-md-3 col-sm-12">Ok, here is the third dummy, but I am looking at the creator of the file as a dummy</div>
-                    <div class="cardContainer col-lg-3 col-md-3 col-sm-12">And lastly this is where it ends!</div>
-                </div>    
+    <div class="jumboCopy">
+    <h1 class="display-2"><strong> New Games Available</strong></h1>
+    <p class="display-4"><strong>3 new tables available, let us know if you want to join!</strong></p>
+    <h3 class="display-5">Available games with John Markl, Daniel Kay, Sean Moreira</h3> 
+    
+    <!-- Button trigger modal -->
 
-            </div>
+    <!-- I've got to group them together, they have to be in the div class that surrounds the whole thing. this specific being for the footer section.  -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#exampleModal">
+    Email us here!
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">We've coppied our email to your clipboard, we'd love to hear from you soon!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
-
-
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
     </div>
+  </div>
 </div>
 
+  </div>
+  </div>      
 </div>
-<h2>Icons for menu</h2>  
+<!--End of Jumbotron-->
 
-<input type="button" value="Shop" style="float: right;">
-<input type="button" value="services" style="float: right;">
-<input type="button" value="Games" style="float: right;">
-<input type="button" value="Socials" style="float: right;">
+<!-- Here I need to add a HERO IMAGE OF THE STORE! -->
+<!-- Go work on your design you dummy! -->
+<!-- You also have to have the dammed Jquery stuff added to it -->
+<!-- Also you need to do the case study for it as well -->
 
-<li>Socials, Games, Services, Shop</li>
-<header img src=""></header>
-<div class=".covidRow">
-    <h2>COVID Warning</h2>
+<!--Start of Covid Box-->
+ <div class="boxCovid">
+    <h2><strong>COVID Warning</strong></h2>
     <p>
-        <strong>Level 1</strong>signifies a severe and uncontrolled level of COVID-19 in Harris County, meaning outbreaks are present and worsening, 
+        <strong><h4>Level 1</h4></strong>signifies a severe and uncontrolled level of COVID-19 in Harris County, meaning outbreaks are present and worsening, 
         and public health capacity is strained or exceeded.
         At this level, unvaccinated residents should take action to minimize contact with others wherever possible.
         Unvaccinated individuals should continue to mask, physically distance, and avoid all gatherings. 
@@ -72,16 +83,22 @@
         public places, in crowded outdoor settings, and for 
         activities with close contact with others who are not fully vaccinated.
     </p>
+</div>
+<!-- End of Covid Box -->
 
-    </div>
-<div>
-    <h1>Store Hours</h1>
+
+<!--Start of Hours/Service/Social, here the only thing that needs to be changed is the placing of the FB and Meetup logos, so that they aren't right next to each other. Also the email button 
+needs to be a little lower and not hugging the things above it.-->
+
+<div class="serviceHours">
+<div class="boxHours">
+    <h1><strong>Hours</strong></h1>
 
      <div>Monday
-        4:30–9PM</div>   
+        4:30–9PM</div>  
 
      <div>Tuesday
-        4:30–9PM</div>   
+        4:30–9PM</div>
         
      <div>Wednesday
         4:30–9PM</div>
@@ -99,98 +116,158 @@
         Closed</div>
 
 </div>
-<div>
-    <h2>Services Offered</h2>
 
-        <div>Tabletop Gaming</div>
-        <div>Mini Figure Painting Station</div>
-        <div>3D Printing</div>
-        <div>Snacks and Drinks</div>
+<div class="servicesOffered">
+    <h1><strong>Services Offered</strong></h2>
 
+        <div><li>Tabletop Gaming</li></div>
+        <div><li>Mini Figure Painting Station</li></div>
+        <div><li>3D Printing</li></div>
+        <div><li>Snacks and Drinks</li></div>     
 </div>
-    <h1>About Us</h1>
-    <div>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-        Pretium adipiscing placerat faucibus est tortor. 
-        Auctor habitasse sit praesent nulla risus pretium. 
-        Et non sit sit habitasse pellentesque donec mauris, dui imperdiet. 
-        Suscipit eu vel velit commodo vel. </p>
-    <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus ultrices congue ultricies 
-        quam rutrum eget neque mauris. Libero non tortor lectus duis vulputate fusce tincidunt sed.
-        Quis morbi commodo aliquam bibendum at arcu leo. Tempus non laoreet elit risus, id.
-        Senectus nunc in non vitae aenean risus ut auctor. Duis enim eros, convallis nisl, 
-        vel nisi, vulputate nulla. Consectetur enim sit augue amet, ridiculus. Viverra felis 
-        sapien eu faucibus vitae risus adipiscing. A iaculis facilisi gravida mi, nulla maecenas venenatis. 
-        
-        Tellus vitae at sed pellentesque. Duis purus ac sollicitudin leo iaculis cursus vitae hac. 
-        Sed condimentum aliquam varius in integer arcu praesent. Sollicitudin cras libero imperdiet at viverra nibh.</P>
-    </div>    
-<di>
-    <h2>Social Media Links</h2>
-    <div>Facebook Logo
-        <div img src=""></div>
 
+<div class="socials">
+    <div class="socialLogo">
+    <h1><strong>Social Media</strong></h1>
     </div>
-    <div>Meetup Logo
-        <div img src=""></div>
-    <div>Place holder for email/connect</div>    
-
+    <div class="socialLogo">
+    <img src="/Images/FB Logo.png" alt="Facebook Link">
+    <img src="/Images/Meetup Logo.png" alt="Meetup Link">
+    </div>
+    <div class="socialLogo">
+    <a class="btn btn-primary btn-lg" href="#" role="button">Click to Email us</a>
+    </div>   
+    </div>
+    </div>
 </div>
-<div>
-    <h2>Social Images of the shop and players</h2>
-        <div>
-        <img src="/UX_HW_18/Images/Dice Throw.jpeg" alt="Dice Throw" style="width:300px;height:200px;"> "Shop Image 1"
-        <img src="/UX_HW_18/Images/Dice.jpeg" alt="Dice" style="width:300px;height:200px;"> "Shop Image 2"
-        <img src="/UX_HW_18/Images/Phone D&D.jpeg" alt="Phone D&D" style="width:300px;height:200px;"> "Shop Image 3"
-        <img src="style="width:300px;height:200px;>"Shop Image 4"
-<!--Adding the images side by side with a padding of at least 100px in between each other-->
-
 </div>
-<!--How do I add a rectangular container here to put the info in??-->
+
+<div class="aboustUssection">
+<div class="aboutUs">
+    <h1><strong>About Us</strong></h1>
     <div>
+    <p>We are a small gaming community that developed from our passion to want a place to be able to play and have fun with friends. </p>
+    <P>We have carefully curated our location to be able to have several open tables available for those that are experienced and for those 
+        that are new to the world of table top gaming. Our main focus is Dungeon & Dragons, however we do offer several other games that 
+        are of the table top variety. We have Settlers of Catan, Pandemic, Descent: Legends of the Dark, Arkham Horror: The Card Game, 
+        Blood Rage, and Magic the Gathering among many more other games. We also have 3D printing services where we can print out your Minis
+        so that you can play with them during your campaing. If you don't feel like playing but still want to been in this enviorment that we 
+        have created for you all, come and chat with us we love to talk to our patrons!
+    </P>
+    </div>    
+</div>
+</div>
+<!--End of Hours/Services/Socials section-->
+
+</div>
+
+    <h2>Social Images of the shop and players</h2>
+    <!-- You need to place the images in a container 4 top 4 bottom -->
+    <div class="shopImages">
+        <img src="/Images/Beavers of Archery.png" alt="Beavers of Archery" style="width:300px; height:300px;">
+        <img src="/Images/Beholder.png" alt="Zombie Beholder" style="width:300px;height:300px;">
+        <img src="/Images/Start of the night.png" alt="Start of the Night" style="width:300px;height:300px;">
+        <img src="/Images/Starwars.png" alt="Star Wars" style="width:300px;height:300px;">
+        <img src="/Images/Mini.png" alt="Mini Figure" style="width:300px;height:300px;">
+        <img src="/Images/DiceBag.png" alt="Dice Bag" style="width:300px;height:300px;">
+        <img src="/Images/Mini2.png" alt="Mini 2" style="width:300px;height:300px;">
+    </div>    
+<!--End Social Images of Shop Section-->
+
+
+<!--Upcoming Calendar Start
+Here there are goign to be at least 6 Calendar items that lign up with the actual events that are happening at Golems Gate. They should all be clickable so that 
+the user can go directly to that event and see if they want to participate. Also there should be a button linked to an actual Calendar that has those events in them or there
+could be an image that could have said events in them next to the actual events-->
+
+<!--Most likely you need to add a class or an Id to this section as well-->
+
+<div>
         <h2>Upcoming Events and Calendar</h2>
         <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
         <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
         <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
         <div>
-
+<!--Here you need to figure out what the button that is associated with Bootstrap is so you can add it and make it similar to the ones that are already here-->
             <button type="button">Calendar Games</button>
-
         </div>
         
 <div>
+
+<!-- Upcoming Calendar End -->
+
+
+
+<!--Footer Section Start, this needs to be contained within a container at the bottom with padding. Having the map on the left and the other information on the right. Most likely there will 
+be two containers that will make it up. -->
     <h2>Footer Section</h2>
 <!--I literaly copied this from the website where it is offered-->
 <footer>
+<div class="footer"> 
+    <div class="footer1">   
 <div class="mapouter">
     <div class="gmap_canvas">
-        <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=4645%20S%20Main%20St,%20Stafford,%20TX%2077477&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"> 
+        <iframe width="400" height="450" id="gmap_canvas" src="https://maps.google.com/maps?q=4645%20S%20Main%20St,%20Stafford,%20TX%2077477&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"> 
         </iframe>
         <a href="https://www.whatismyip-address.com/divi-discount/"></a>
         <br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style>
-        <a href="https://www.embedgooglemap.net">google map html embed</a>
-        <style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div>
+        <style>.gmap_canvas {overflow:hidden; background:none!important; height: 600px; width: 400px;}</style></div>
     </div>
     <div>
-        <div>Socials</div>
-        <div>Games</div>
-        <div>Services</div>
-        <div>Shop</div>
-    <div><h2>Contact Us</h2></div>
-    <div>(832) 000-0000</div>
-    <div>GGTG@gmail.com</div>      
+        <div class="footer1">
+            <div>
+                <div>Socials, Games, Services, Shop</div>
+            </div>
+            <div class="footer2">   
+                <h1><div>Contact Us</div>
+                <div>(832) 868-1111</div>
+                <div>GGTG@gmail.com</div></h1>
+            </div>
+    </div>    
+</div>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    Email us here!
+  </button>
+  <!-- Talk to Ray or Hannah about the grouping -->
+  <!-- Modal -->   
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">We've coppied our email to your clipboard, we'd love to hear from you soon!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
     </div>
+  </div>
+</div>
+</div>
+
 </footer>
-
-</div>
-
-    </div>
-
+<!-- End of Footer -->
 </div>
 
 </div>
 
+</div>
 
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+crossorigin="anonymous"></script>
 </body>
 
 </html>
