@@ -31,7 +31,7 @@ body {
   /* } */
 
 .jumbotron {
-  background-image: url("Images/joe-maldonado-dice-lower.png");
+  background-image: url("Images/ArtboardBG.png");
   background-size: cover;
   background-repeat: no-repeat;
   height: 50px;
@@ -39,6 +39,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-bottom: -75px;
 }  
 
 .jumboCopy {
@@ -74,7 +75,7 @@ body {
   background-color: lightgrey;
   height: auto;
   padding-top: 25px;
-  padding-left: 50px;
+  padding-left: 25px;
   padding-bottom: 35px;
   width: 33.3%;
 }
@@ -83,7 +84,7 @@ body {
   background-color: lightgrey;
   height: auto;
   padding-top: 25px;
-  padding-left: 50px;
+  padding-left: 25px;
   padding-bottom: 35px;
   column-gap: 5px;
   row-gap: 100px;
@@ -105,7 +106,8 @@ justify-content: center;
 }
 
 .shopImages{
-  display: grid;
+  display: flex;
+  justify-content: center;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
   grid-auto-rows: minmax(100px, auto);
@@ -116,6 +118,36 @@ justify-content: center;
   gap: 10px;
   padding: auto;
    */
+}
+
+.nineImages{
+    display: grid;
+    grid-template-rows: 325.5px 325.5px 325.5px;
+    grid-template-columns: 325.5px 325.5px 325.5px;
+}
+
+.box {
+  background: #C4C4C4;
+  border-radius: 8px;
+  border: 5px solid #555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #AAA;
+}  
+
+.calendar{
+  background-color: #C4C4C4;
+  padding: 25px;
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: -75px; */
+}
+
+.calendarButton {
+  display: flex;
+  align-content: flex-end;
 }
 
 .footer {
